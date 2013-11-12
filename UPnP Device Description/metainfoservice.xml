@@ -1,0 +1,34 @@
+﻿<?xml version="1.0"?>
+<scpd xmlns="urn:Belkin:service-1-0">
+
+  <specVersion>
+    <major>1</major>
+    <minor>0</minor>
+  </specVersion>
+  
+  <actionList>
+  
+    <action>
+      <name>GetMetaInfo</name>
+      <argumentList>
+ 	<retval />
+           <name>GetMetaInfo</name>
+           <relatedStateVariable>MetaInfo</relatedStateVariable>
+           <direction>in</direction>
+      </argumentList>
+    </action>
+
+    
+</actionList>
+
+  <serviceStateTable>
+  
+    <stateVariable sendEvents="yes">
+      <name>MetaInfo</name>
+      <dataType>string</dataType>
+      <defaultValue>0</defaultValue>
+    </stateVariable>
+
+  </serviceStateTable>
+  
+  </scpd>
